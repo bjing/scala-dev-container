@@ -42,6 +42,13 @@ COPY scripts/install_scala.sh $USER_HOME/install/install_scala.sh
 WORKDIR $USER_HOME/install/
 RUN ./install_scala.sh
 
+
+#######################
+# Install other tools
+#######################
+RUN git clone https://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
+RUN ~/.scm_breeze/install.sh
+
 RUN mkdir $USER_HOME/app
 WORKDIR $USER_HOME/app
 

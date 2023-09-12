@@ -2,4 +2,4 @@
 
 source scripts/install_scala.env
 
-docker build --build-arg $SCALA_VERSION -t scala-dev-container:latest .
+docker build --build-arg SCALA_VERSION=$SCALA_VERSION -t scala-dev-container:latest .

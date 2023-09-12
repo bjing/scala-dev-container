@@ -1,1 +1,1 @@
-# custom-debian-dev-container
+# scala-dev-container
